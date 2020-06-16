@@ -24,5 +24,8 @@ To turn on the debug mode,
 >$env:FLASK_ENV="development"
 
 This project takes the receivers' email addresses and saves them dynamically into a csv file which is cleared after the mails are sent.
-
 It sends a mail with a common message which fulfills the job of bulk mailing.
+
+![alt text](https://github.com/gargi3099/Bulk-Mail-System-using-python3/blob/master/Screenshot%20(350).png?raw=true)
+
+![alt text](https://github.com/gargi3099/Bulk-Mail-System-using-python3/blob/master/Screenshot%20(351).png?raw=true)
