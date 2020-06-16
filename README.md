@@ -11,6 +11,8 @@ Then to install flask,
 
 >pip install Flask
 
+And finally to set up the connection,
+
 >set FLASK_APP=server.py
 
 >$env:FLASK_APP="server.py"
