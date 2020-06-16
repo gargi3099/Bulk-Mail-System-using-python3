@@ -17,6 +17,12 @@ And finally to set up the connection,
 
 >$env:FLASK_APP="server.py"
 
+To turn on the debug mode,
+
+>set FLASK_ENV=development
+
+>$env:FLASK_ENV="development"
+
 This project takes the receivers' email addresses and saves them dynamically into a csv file which is cleared after the mails are sent.
 
 It sends a mail with a common message which fulfills the job of bulk mailing.
