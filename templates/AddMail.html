@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="static\assets\mail.css" rel="stylesheet" type="text/css" />
+<style>
+* {
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+    <br><br>
+<div class="container">
+    <h1 style="color: red; text-align: center;">Mail Service Implementation</h1>
+    <h5 style="color: red; text-align: center;">Add Email</h5>
+  <form action="add_email" method="POST">
+  <div class="row">
+    <div class="col-25" style="text-align: center;">
+      <label for="fname" style="font-size: large;">To :-</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Enter receiver's email.">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+    </div>
+    <div class="col-75">
+    <button id = "addemail" type="submit" class="btn-primary">Add Email</button>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+            <h3>{{message}}</h3>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    <script type= "text/javascript">
+         document.getElementById("addemail").onclick = function () {
+            location.href = "AddMail.html";
+            };
+    </script>
+    </div>
+  </div>
+  </form>
+  <br>
+  <div class="row">
+    <div class="col-25">
+    </div>
+    <div class="col-75">
+    <button id="myButton" class="float-center btn-success">Add Message</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "Mail.html";
+        };
+    </script>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
